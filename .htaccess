@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^about/([a-zA-Z0-9-/]+)$ about/?slug=$1   [L]
+RewriteRule ^wedding-docs/([a-zA-Z0-9-/]+)$ wedding-docs/?slug=$1   [L]
+RewriteRule ^contact/([a-zA-Z0-9-/]+)$ contact/?slug=$1   [L]
+RewriteRule ^project/([a-zA-Z0-9-/]+)$ project/?slug=$1   [L]
+RewriteRule ^news/([a-zA-Z0-9-/]+)$ news/?slug=$1   [L]
+RewriteRule ^no-problem/([a-zA-Z0-9-/]+)$ no-problem/?slug=$1   [L]
+RewriteRule ^television-shows/([a-zA-Z0-9-/]+)$ television-shows/?slug=$1   [L]
+RewriteRule ^documentaries/([a-zA-Z0-9-/]+)$ documentaries/?slug=$1   [L]
+RewriteRule ^corporate-films/([a-zA-Z0-9-/]+)$ corporate-films/?slug=$1   [L]
+RewriteRule ^others/([a-zA-Z0-9-/]+)$ others/?slug=$1   [L]
+RewriteRule ^house-of-qidwa/([a-zA-Z0-9-/]+)$ house-of-qidwa/?slug=$1   [L]
